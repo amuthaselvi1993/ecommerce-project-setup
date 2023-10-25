@@ -18,6 +18,7 @@ public class CategoryController {
     public String createCategory(@RequestBody Category category)
     {
         categoryService.createCategory(category);
+        System.out.println("Success!");
         return "success";
     }
     @GetMapping("/list")
