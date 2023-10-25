@@ -16,7 +16,7 @@ public class CategoryController {
 
     @PostMapping("/create")
     public String createCategory(@RequestBody Category category)
-    {
+    { 
         categoryService.createCategory(category);
         System.out.println("Success!");
         return "success";
